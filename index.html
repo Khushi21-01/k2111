@@ -51,7 +51,6 @@
     <head>
         <title>Sum of Multiples</title>
         <script>
-            // Function to calculate the sum of multiples of a or b in array l
             function f4(a, b, l) {
                 let sum = 0;
                 for (let i = 0; i < l.length; i++) {
@@ -61,14 +60,12 @@
                 }
                 return sum;
             }
-    
-            // Function to handle button click
             function calculateSum() {
-                const a = parseInt(document.getElementById('inputA').value);
-                const b = parseInt(document.getElementById('inputB').value);
-                const l = document.getElementById('inputL').value.split(',').map(Number); // Convert input string to array of numbers
+                let a = parseInt(document.getElementById('inputA').value);
+                let b = parseInt(document.getElementById('inputB').value);
+                let l = document.getElementById('inputL').value.split(',').map(Number);
     
-                const result = f4(a, b, l);
+                let result = f4(a, b, l);
                 alert('The sum of all multiples of ' + a + ' or ' + b + ' in the array is: ' + result);
             }
         </script>
